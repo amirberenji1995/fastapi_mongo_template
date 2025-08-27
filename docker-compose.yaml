@@ -5,7 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: fastapi_template
     env_file:
-      - sample.env
+      - .env
     ports:
       - "8000:8000"
     volumes:

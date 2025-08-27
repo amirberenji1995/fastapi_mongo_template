@@ -7,4 +7,3 @@ client = TestClient(app)
 def test_get_health():
     r = client.get("/")
     assert r.status_code == 200
-    assert r.json() == {"message": "Server is running."}

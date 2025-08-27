@@ -1,6 +1,5 @@
 from fastapi import APIRouter, status, Query
 from app.my_app.schemas import UserCreateSchema, UserRetrieveSchema, UserUpdateSchema
-from app.base_response import BaseResponse
 from app.my_app.services import (
     create_user_service,
     get_user_service,

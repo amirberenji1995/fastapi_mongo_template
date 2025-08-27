@@ -36,7 +36,9 @@ def create_app() -> FastAPI:
     async def get_health():
         return JSONResponse(
             status_code=200,
-            content={"message": "Server is up and running!"},
+            content={
+                "message": "Server is up and running; and the CI/CD is working perfectly!"
+            },
         )
 
     return app

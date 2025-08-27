@@ -4,3 +4,4 @@ beanie<2
 pydantic-settings
 uuid6
 pytest
+pytest_dotenv

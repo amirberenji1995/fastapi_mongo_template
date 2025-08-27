@@ -1,0 +1,8 @@
+.mongo_data
+mongo_data
+__pycache__/
+*.pyc
+*.pyo
+*.db
+.env
+.env.*

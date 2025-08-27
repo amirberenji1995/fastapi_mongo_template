@@ -1,0 +1,4 @@
+.venv/
+mongo_data/
+.env
+*__pycache__

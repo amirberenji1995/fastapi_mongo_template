@@ -1,0 +1,23 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastapi_template
+    env_file:
+      - sample.env
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app # mount whole project
+    depends_on:
+      - mongo
+    restart: on-failure
+
+  mongo:
+    image: mongo:8.0
+    container_name: mongo_template
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo_data:/data/db

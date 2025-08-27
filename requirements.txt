@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+beanie<2
+pydantic-settings
+uuid6
+pytest

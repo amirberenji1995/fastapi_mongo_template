@@ -5,3 +5,4 @@ pydantic-settings
 uuid6
 pytest
 pytest_dotenv
+httpx

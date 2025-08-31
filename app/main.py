@@ -37,7 +37,7 @@ def create_app() -> FastAPI:
         return JSONResponse(
             status_code=200,
             content={
-                "message": "Server is up and running; and the CI/CD is working perfectly!. Let's test once more!"
+                "message": "Server is up and running; and the CI/CD is working perfectly!. Let's test once more!!!"
             },
         )
 

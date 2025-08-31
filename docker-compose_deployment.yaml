@@ -6,8 +6,6 @@ services:
       - .env
     ports:
       - "8000:8000"
-    volumes:
-      - .:/app # mount whole project
     depends_on:
       - mongo
     restart: on-failure

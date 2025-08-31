@@ -37,10 +37,11 @@ def create_app() -> FastAPI:
         return JSONResponse(
             status_code=200,
             content={
-                "message": "Server is up and running; and the CI/CD is working perfectly!"
+                "message": "Server is up and running; and the CI/CD is working perfectly!. Let's test once more!"
             },
         )
 
     return app
+
 
 app = create_app()

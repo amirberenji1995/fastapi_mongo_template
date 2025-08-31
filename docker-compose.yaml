@@ -1,8 +1,9 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: ghcr.io/amirberenji1995/fastapi_mongo_template:latest
     container_name: fastapi_template
     env_file:
       - .env
